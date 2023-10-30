@@ -16,7 +16,7 @@ Users will have the option to rename the "logo.svg" file to the file name of you
 ## Usage
 Run the following command in your terminal to initialize the application: node script.js and follow the prompts to generate your SVG Logo.
 
-License
+## License
 This project is licensed under MIT.
 
 ## Contributing

@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const fs = require('fs');
+const {Circle, Square, Triangle} = require("./lib/shapes");
 
 class Shape {
     constructor(type, x, y, color) {

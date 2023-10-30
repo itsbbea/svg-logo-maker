@@ -29,6 +29,24 @@ generateSVG(); {
     return svg;
 }
 
+function generateSVG (answers) {
+    return `
+#Text
+${answers.text}
+
+## Text Color
+${answers.text-color}
+
+## Shape
+${answers.shape}
+
+## Pixel Image
+${answers.pixel-image}
+    `;
+}
+
+inquirer
+prompt
 const questions = [
     {
         type: "input",

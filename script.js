@@ -70,3 +70,14 @@ const questions = [
         choices: ["Circle", "Square", "Triangle"],
     },
 ];
+
+then((answers) => {
+    if (answers.text.length > 3) {
+      console.log("Your text logo must contain a maximum 3 characters.");
+    }else {
+      const readmeFile = generateSVG(answers);
+      fs.writeFile('./examples/logo.svg', logoSvgString, readmeFile, (err) => {
+        err ? console.log(err) : console.log("Generated logo.svg");
+      });
+    }
+  });
